@@ -1,4 +1,18 @@
+
 # Python code​​​​​​‌‌​​​‌​‌‌​​​‌​​‌​​‌‌​​‌​​ below factoria
+
+def factorial_recursive(num):
+    # Your code goes here.
+    if(type(num)) != int:
+        return None
+    if(num < 0):
+        return None
+    
+    if num == 0:
+        return 1
+    
+    return num * factorial(num - 1)
+    
 
 def factorial(num):
     # Your code goes here.
@@ -17,6 +31,9 @@ def factorial(num):
     return factorial
 
 
-print(factorial(5))
+print("Factorial of 5 : ",factorial(5))
+print("Factorial of string : ", factorial("ankit"))
+print("Factorial of -5 : ", factorial(-5))
+print("Factorial of 0 : ", factorial(0))
 
       
